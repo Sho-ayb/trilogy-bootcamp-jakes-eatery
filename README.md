@@ -13,6 +13,6 @@ This is part of Trilogy Bootcamp in Frontend web development - Creating a webpag
 The main objective is to continue to develop layout principles of web design by using Flexbox and also develop workflow as a front-end developer. 
 
 
-![image solution to jakes eatery](./images/jake\'s-eatery-solution.PNG)
+![image solution to jakes eatery]("./images/jake's-eatery-solution.PNG")
 
 
