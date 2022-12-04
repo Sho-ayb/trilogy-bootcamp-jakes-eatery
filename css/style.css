@@ -1,5 +1,161 @@
 /* Navigation styles */
 
+.logo {
+  height: 230px;
+  background: white;
+  background-image: url("../images/jakes-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* this is the parent element of the nav links so will be a flex container */
+
+.nav {
+  display: flex;
+  background-color: #212529;
+  padding: 20px;
+  align-items: center;
+  opacity: 0.85;
+}
+
+.button-left,
+.nav-center,
+.button-right {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-left,
+.button-right {
+  width: 25%;
+}
+
+.nav-center {
+  width: 50%;
+}
+
+/* styling the anchor tags , we will use internal element targeting to target the anchors that are part of the nav */
+
+.nav a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav a:hover {
+  color: #ff8787;
+}
+
+/* styling the button elements  */
+
+button {
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  width: 50%; /*  this is to say take up 50% of the containing element */
+}
+
+/* selecting the each specific button and changing the background color */
+
+div .button-left button {
+  background-color: yellow;
+}
+
+div .button-right button {
+  background-color: lightblue;
+}
+
 /* Column styles */
 
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto; /* this is to center the element within its containing element */
+}
+
+.meal1,
+.meal2,
+.meal3 {
+  /* width: 100%; */
+  height: 100%; /*  giving it 100% will split each element in to separate heights that all will add up to 800px - the height of the containing element */
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 18px;
+}
+
+.meal1 {
+  background-image: url("../images/steak.png");
+  margin-top: 20px;
+  opacity: 0.75;
+}
+
+.meal2 {
+  background-image: url("../images/soup.png");
+  margin-top: 20px;
+  opacity: 0.75;
+}
+
+.meal3 {
+  background-image: url("../images/cheesecake.png");
+  margin-top: 20px;
+  opacity: 0.75;
+}
+
+.text {
+  background-color: black;
+  opacity: 0.75;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.text p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Footer Styles */
+
+.footer {
+  display: flex;
+  padding: 15px;
+  background-color: #212529;
+  opacity: 0.85;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.footer a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.fb {
+  color: skyblue;
+}
+
+.tw {
+  color: yellow;
+}
+
+.ig {
+  color: red;
+}
