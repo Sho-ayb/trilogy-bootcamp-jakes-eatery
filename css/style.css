@@ -75,9 +75,10 @@ div .button-right button {
 .column {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  /* width: 1200px; */
+  width: 80%; /*  giving a width of 80% ensures that the width will remain even when on small screen sizes and thus; responsive */
   height: 800px;
-  margin: 0 auto; /* this is to center the element within its containing element */
+  margin: 0 auto; /*this is to center the element within its containing element */
 }
 
 .meal1,
